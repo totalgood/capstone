@@ -36,14 +36,18 @@
 
 <p>A custom neural net for recoginzing handwritten digits, with a serious nod to <a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">I Am Trask</a>.  The neural net is pre-trained on the MNIST dataset (run on an AWS instance).  And the user input is rescaled and tested.</p>
 
+<p>sketch.js is a library created by <a href="http://intridea.github.io/sketch.js/">Michael Bleigh</a> to allow the user to draw the image of a digit.  It has been modified to pull a drawn image from the page before being resized and sent to the neural network for classifaciton.</p>
+
 <h2>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO</h2>
 
 <ul>
-<li>Correct button layout</li>
-<li>Add option to enter correct value (on an incorrect guess), to collect specific data on accuracy</li>
+<li>Analize Results</li>
+<li>Analize correlation of misclassification and actual numbers (7's tend to be classified as 2, etc.)</li>
+<li>Train net on rotated images for more robust recognition</li>
 <li>Visualizations of each layer of the net (in d3 or bokeh)</li>
 <li>Provide a selection of neural net architectures to allow a user to swap out and see the different vizualations and results.  (Results data will be stored by specific architecture.)</li>
+<li>Finish Documentation</li>
 </ul>
 
 <h2>
