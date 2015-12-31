@@ -36,6 +36,8 @@
 
 <p>A custom neural net for recoginzing handwritten digits, with a serious nod to <a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">I Am Trask</a>.  The neural net is pre-trained on the MNIST dataset (run on an AWS instance).  And the user input is rescaled and tested.</p>
 
+<p><a href="https://travis-ci.org/uglyboxer/capstone"><img src="https://travis-ci.org/uglyboxer/capstone.svg?branch=master" alt="Build Status"></a> <a href="http://capstone.readthedocs.org/en/latest/?badge=latest"><img src="https://readthedocs.org/projects/capstone/badge/?version=latest" alt="Documentation Status"></a></p>
+
 <p>sketch.js is a library created by <a href="http://intridea.github.io/sketch.js/">Michael Bleigh</a> to allow the user to draw the image of a digit.  It has been modified to pull a drawn image from the page before being resized and sent to the neural network for classifaciton.</p>
 
 <h2>
@@ -47,7 +49,6 @@
 <li>Train net on rotated images for more robust recognition</li>
 <li>Visualizations of each layer of the net (in d3 or bokeh)</li>
 <li>Provide a selection of neural net architectures to allow a user to swap out and see the different vizualations and results.  (Results data will be stored by specific architecture.)</li>
-<li>Finish Documentation</li>
 </ul>
 
 <h2>
@@ -55,7 +56,9 @@
 
 <p>Navigate to: <a href="https:uglyboxer.pythonanywhere.com">Finnegan</a></p>
 
-<p>The baseline architecture for the net is at <a href="http://uglyboxer.github.io/finnegan/">Github</a></p>
+<p>The baseline architecture for the net is on Github, <a href="http://uglyboxer.github.io/finnegan/">here</a>, and the code for the webapp (including Finnegan) be found <a href="https://github.com/uglyboxer/capstone">here</a>.</p>
+
+<p>Full documentation hosted <a href="http://capstone.rtfd.org">here</a></p>
 
 <p>To adjust hyper-parameters or choose dataset:
 Open net_launch.py and adjust as needed at the bottom of the file.  The dataset can be switched by commenting out the appropriate line at the bottom and uncommneting the other.  Or simply:</p>
